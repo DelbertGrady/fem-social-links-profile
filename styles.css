@@ -1,0 +1,135 @@
+@font-face {
+  font-family: "Inter";
+  src: url("assets/fonts/static/Inter-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("assets/fonts/static/Inter-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("assets/fonts/static/Inter-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-green: hsl(75, 94%, 57%);
+  --color-grey-700: hsl(0, 0%, 20%);
+  --color-grey-800: hsl(0, 0%, 12%);
+  --color-grey-900: hsl(0, 0%, 8%);
+  --border-radius-big: 12px;
+  --border-radius-small: 8px;
+  --spacer-big: 2rem;
+  --spacer-medium: 1rem;
+  --spacer-small: 0.5rem;
+}
+
+p,
+h1,
+h2 {
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: var(--color-grey-900);
+  font-family: Inter, sans-serif;
+  color: var(--color-white);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  max-width: 90vw;
+  background: var(--color-grey-800);
+  padding: 40px;
+  border-radius: var(--border-radius-big);
+}
+
+.card__avatar {
+  width: 5.375rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  margin-block-end: var(--spacer-big);
+}
+
+.card__owner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card__owner-location {
+  margin-block-start: var(--spacer-small);
+  color: var(--color-green);
+}
+
+.card__owner-quote,
+.card__owner-location {
+  font-size: 0.85em;
+}
+
+.card__owner-quote {
+  margin-block: var(--spacer-big);
+  text-align: center;
+}
+
+.card__owner-location {
+  font-weight: 600;
+}
+
+.card__social-media {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: var(--spacer-medium);
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 1.5em;
+  background: var(--color-grey-700);
+  font-weight: 600;
+  font-size: 0.85em;
+  color: var(--color-white);
+  border-radius: var(--border-radius-small);
+  text-decoration: none;
+}
+
+.btn:focus {
+  outline: 2px solid var(--color-green);
+  outline-offset: 2px;
+  background: var(--color-green);
+  color: var(--color-grey-900);
+}
