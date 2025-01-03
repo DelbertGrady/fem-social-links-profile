@@ -127,6 +127,11 @@ body {
   text-decoration: none;
 }
 
+.btn:hover {
+  background-color: var(--color-green);
+  color: var(--color-grey-900);
+}
+
 .btn:focus {
   outline: 2px solid var(--color-green);
   outline-offset: 2px;
