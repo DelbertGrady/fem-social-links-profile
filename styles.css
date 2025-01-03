@@ -33,9 +33,9 @@
   --color-grey-900: hsl(0, 0%, 8%);
   --border-radius-big: 12px;
   --border-radius-small: 8px;
-  --spacer-big: 2rem;
-  --spacer-medium: 1rem;
-  --spacer-small: 0.5rem;
+  --spacer-big: 32px;
+  --spacer-medium: 16px;
+  --spacer-small: 8px;
 }
 
 p,
